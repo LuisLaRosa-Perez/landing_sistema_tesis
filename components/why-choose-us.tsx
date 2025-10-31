@@ -10,19 +10,19 @@ import { LogoCloud } from "./logo-cloud";
 const plusPoints = [
   {
     icon: ShieldCheckIcon,
-    title: "Real-Time Protection",
+    title: "Protección en Tiempo Real",
     description:
-      "Stay alert with instant notifications and smart security monitoring.",
+      "Recibe alertas inmediatas y mantente informado ante cualquier cambio. NeurOS analiza patrones y detecta situaciones anómalas antes de que se conviertan en un problema.",
   },
   {
     icon: CogIcon,
-    title: "Smart & Simple Setup",
-    description: "Install easily in minutes with no complex tools or wiring.",
+    title: "Configuración Inteligente y Sencilla",
+    description: "Implementa NeurOS en minutos. Su instalación es intuitiva, sin cables ni configuraciones complejas. Solo conecta, configura y comienza a disfrutar.",
   },
   {
     icon: BinocularsIcon,
-    title: "Peace of Mind Anywhere",
-    description: "Monitor and control your home from anywhere, anytime.",
+    title: "Tranquilidad en Cualquier Lugar",
+    description: "Monitorea tu hogar o entorno desde cualquier dispositivo y en cualquier momento. Mantén el control y la tranquilidad, estés donde estés.",
   },
 ];
 
@@ -33,13 +33,13 @@ export function WhyChooseUs() {
       className="max-w-(--breakpoint-xl) mx-auto px-6 text-center py-24"
     >
       <strong className="font-semibold text-muted-foreground">
-        Why Choose Us
+        ¿Por Qué Elegir NeurOS?
       </strong>
       <h2 className="mt-5 max-w-4xl mx-auto text-4xl sm:text-5xl leading-[1.1] font-semibold tracking-tighter text-balance">
-        We are Leading in Smart Assistants with Nearly 20 Years of Experience
+        El futuro del bienestar y la seguridad empieza en casa.
       </h2>
       <p className="mt-5 text-lg text-muted-foreground">
-        We are constantly always keep pace with the time.
+        NeurOS combina inteligencia artificial y monitoreo inteligente para crear espacios más seguros, cómodos y personalizados. El sistema aprende de tu entorno y responde a tus necesidades en tiempo real.
       </p>
 
       <div className="mt-12 flex flex-wrap gap-4 justify-center">
@@ -56,7 +56,7 @@ export function WhyChooseUs() {
               {plusPoint.description}
             </p>
             <Button className="mt-6">
-              Learn More <ArrowUpRightIcon />
+              Conoce Más <ArrowUpRightIcon />
             </Button>
           </div>
         ))}
@@ -64,7 +64,7 @@ export function WhyChooseUs() {
 
       <div className="mt-32 space-y-12">
         <p className="text-3xl font-medium tracking-tight">
-          Trusted by over 30,000 businesses and 1,500,000 users
+          Con la confianza de más de 30.000 empresas y 1.500.000 de usuarios
         </p>
         <LogoCloud />
       </div>

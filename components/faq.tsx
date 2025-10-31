@@ -19,62 +19,51 @@ type FrequentlyAskedQuestion = {
 
 const faqs: FrequentlyAskedQuestion[] = [
   {
-    question: "What is your return policy?",
+    question: "¿Qué es NeurOS?",
     answer:
-      "We offer a 30-day return policy on all unused products. Please ensure the item is in original packaging when returning.",
+      "NeurOS es un sistema inteligente que combina inteligencia artificial y monitoreo adaptativo para ofrecer protección, asistencia y tranquilidad en tu entorno.",
     icon: Package,
   },
   {
-    question: "How long does shipping take?",
+    question: "¿Cómo funciona el sistema?",
     answer:
-      "Shipping typically takes 3-7 business days depending on your location.",
-    icon: Clock,
-  },
-  {
-    question: "Do you ship internationally?",
-    answer:
-      "Yes, we ship to most countries worldwide. Shipping fees and delivery times vary by destination.",
-    icon: Plane,
-  },
-  {
-    question: "How can I track my order?",
-    answer:
-      "After your order is shipped, you'll receive an email with a tracking link. You can also track your order in your account dashboard.",
+      "El sistema recopila información del entorno mediante sensores o dispositivos conectados. A partir de esos datos, la IA analiza patrones y adapta sus respuestas para mejorar la experiencia del usuario.",
     icon: Waypoints,
   },
   {
-    question: "What payment methods do you accept?",
-    answer: "We accept all major credit cards, PayPal, UPI, and net banking.",
-    icon: CircleDollarSign,
+    question: "¿Necesito conocimientos técnicos para instalarlo?",
+    answer:
+      "No. NeurOS está diseñado para una instalación sencilla. Solo debes seguir unos pasos guiados y el sistema estará listo para operar en menos de 30 minutos.",
+    icon: Clock,
   },
   {
-    question: "Can I cancel or change my order?",
+    question: "¿Qué tipo de alertas o notificaciones puedo recibir?",
     answer:
-      "Yes, you can cancel or modify your order within 2 hours of placing it. After that, the order may already be processed for shipment.",
-    icon: PackageX,
-  },
-  {
-    question: "Is my personal information secure?",
-    answer:
-      "Yes, we use industry-standard encryption to ensure your personal and payment information is secure.",
+      "Recibirás notificaciones instantáneas ante cualquier cambio detectado en tu entorno, como alteraciones inusuales, niveles de estrés o eventos relevantes configurados en el sistema.",
     icon: ShieldPlus,
   },
   {
-    question: "Do you offer customer support?",
+    question: "¿NeurOS requiere conexión a internet?",
+    answer: "Sí. La conexión es necesaria para el procesamiento de datos en tiempo real y la sincronización con tu dispositivo móvil o panel web.",
+    icon: Plane,
+  },
+  {
+    question: "¿Qué tan segura está mi información?",
     answer:
-      "Absolutely. Our support team is available 24/7 via email and chat to help with any issues or questions.",
+      "Tu privacidad es prioritaria. Toda la comunicación y almacenamiento de datos en NeurOS están protegidos con cifrado de nivel empresarial.",
+    icon: ShieldPlus,
+  },
+  {
+    question: "¿Puedo personalizar cómo responde el sistema?",
+    answer:
+      "Por supuesto. Puedes ajustar los parámetros de sensibilidad, el tipo de alertas, y las rutinas adaptativas según tus necesidades o las de tu familia.",
     icon: Users,
   },
   {
-    question: "What payment methods do you accept?",
-    answer: "We accept all major credit cards, PayPal, UPI, and net banking.",
-    icon: CircleDollarSign,
-  },
-  {
-    question: "Can I cancel or change my order?",
+    question: "¿NeurOS ofrece soporte técnico?",
     answer:
-      "Yes, you can cancel or modify your order within 2 hours of placing it. After that, the order may already be processed for shipment.",
-    icon: PackageX,
+      "Sí. Contamos con asistencia técnica remota y documentación detallada para resolver cualquier duda durante la configuración o el uso del sistema.",
+    icon: Users,
   },
 ];
 
@@ -83,10 +72,10 @@ export function FAQ() {
     <div id="faq" className="bg-muted">
       <div className="max-w-(--breakpoint-xl) mx-auto px-6 text-center py-24">
         <h2 className="mt-5 max-w-4xl mx-auto text-4xl sm:text-5xl leading-[1.1] font-semibold tracking-tighter text-balance">
-          Frequently Asked Questions
+          Preguntas Frecuentes
         </h2>
         <p className="mt-5 text-lg text-muted-foreground">
-          Find answers to common questions about our products and services.
+          Encuentra respuestas rápidas sobre NeurOS, nuestro asistente inteligente diseñado para brindar seguridad, bienestar y control en tiempo real.
         </p>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2">

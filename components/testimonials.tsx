@@ -1,58 +1,63 @@
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Product Designer at Canva",
-    avatar: "https://mockmind-api.uifaces.co/content/human/97.jpg",
+    name: "Ana Pérez",
+    role: "Madre y Profesional",
     testimonial:
-      "This product completely changed the way I work. The interface is intuitive and the performance is top-notch.",
+      "NeurOS me da la tranquilidad que necesitaba. Saber que mis hijos están en un entorno seguro mientras trabajo es invaluable. Las alertas de bienestar son una maravilla.",
   },
   {
-    name: "Daniel Kim",
-    role: "CTO at NextLaunch",
-    avatar: "https://mockmind-api.uifaces.co/content/human/80.jpg",
+    name: "Carlos García",
+    role: "Entusiasta de la Domótica",
     testimonial:
-      "We integrated this solution into our stack within days, and the benefits were immediate. Our team collaboration improved, deployment times dropped, and the analytics insights have helped us fine-tune performance at every level.",
+      "He probado muchos sistemas, pero NeurOS es diferente. La IA realmente aprende y se adapta. Es el cerebro que le faltaba a mi casa inteligente.",
   },
   {
-    name: "Emily Chen",
-    role: "Marketing Manager at HubSpot",
-    avatar: "https://mockmind-api.uifaces.co/content/human/113.jpg",
+    name: "Dra. Elena Torres",
+    role: "Psicóloga Infantil",
     testimonial:
-      "I've worked with multiple marketing platforms over the years, but none have offered the kind of personalized experience and seamless integration that this one does. It has truly elevated our campaigns and improved our ROI.",
+      "Recomiendo NeurOS a los padres. La capacidad del sistema para monitorear el ambiente y sugerir mejoras para el bienestar de los niños es una herramienta de apoyo fantástica.",
   },
   {
-    name: "Raj Mehta",
-    role: "Frontend Developer at Zomato",
-    avatar: "https://mockmind-api.uifaces.co/content/human/90.jpg",
-    testimonial: "Clean, fast, and reliable. Everything a dev could ask for.",
+    name: "Javier Rodríguez",
+    role: "Desarrollador de Software",
+    testimonial: "La API de NeurOS es robusta y fácil de integrar. Pude personalizar las rutinas y crear mis propias alertas. ¡Un sistema potente y flexible!",
   },
   {
-    name: "Aisha Patel",
-    role: "Software Engineer at Swiggy",
-    avatar: "https://mockmind-api.uifaces.co/content/human/116.jpg",
-    testimonial: "Smooth and delightful experience!",
+    name: "Laura Méndez",
+    role: "Cuidadora de Personas Mayores",
+    testimonial: "NeurOS ha sido un gran apoyo en mi trabajo. El sistema me alerta de cualquier anomalía en el comportamiento de mis pacientes, lo que me permite actuar de forma proactiva.",
   },
   {
-    name: "Liam Garcia",
-    role: "Startup Founder",
-    avatar: "https://mockmind-api.uifaces.co/content/human/112.jpg",
+    name: "David Castillo",
+    role: "Emprendedor",
     testimonial:
-      "I've used dozens of tools in the past year alone, and this is one of the few I'd actually recommend to other founders. It doesn't just work — it works smart. Everything feels thoughtfully designed and built with care.",
+      "La seguridad de mi negocio y mi hogar están en manos de NeurOS. La instalación fue sorprendentemente sencilla y el sistema ha superado mis expectativas.",
   },
 ];
 
+const getInitials = (name: string) => {
+  const [firstName, lastName] = name.split(" ");
+  return firstName[0] + (lastName ? lastName[0] : "");
+};
+
+const getColor = (name: string) => {
+  const colors = ["#FFC107", "#FF5722", "#4CAF50", "#2196F3", "#9C27B0", "#E91E63"];
+  const charCodeSum = name.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
+  return colors[charCodeSum % colors.length];
+};
+
 export function Testimonials() {
   return (
-    <div className="mx-auto max-w-(--breakpoint-xl) px-6 py-12 sm:py-24">
+    <div id="testimonials" className="mx-auto max-w-(--breakpoint-xl) px-6 py-12 sm:py-24">
       <h2 className="text-center text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-        Loved by Our Users
+        Amado por Nuestros Usuarios
       </h2>
       <p className="text-muted-foreground mt-2 text-center text-lg tracking-normal text-balance sm:mt-4 sm:text-2xl">
-        Their experiences speak louder than words
+        Sus experiencias hablan más que las palabras
       </p>
 
       <div className="mx-auto mt-16 max-w-5xl columns-1 gap-6 sm:columns-2 lg:columns-3">
-        {testimonials.map(({ name, avatar, role, testimonial }, index) => (
+        {testimonials.map(({ name, role, testimonial }, index) => (
           <div
             key={index}
             className="bg-muted mb-6 break-inside-avoid rounded-lg border p-1.5"
@@ -65,11 +70,12 @@ export function Testimonials() {
 
               <p className="grow py-6 text-lg font-medium">{testimonial}</p>
               <div className="mt-2 flex items-center gap-3 py-3.5 sm:mt-4">
-                <img
-                  src={avatar}
-                  alt=""
-                  className="ring-border ring-offset-background h-12 w-12 rounded-full ring-2 ring-offset-[2px]"
-                />
+                <div
+                  className="ring-border ring-offset-background h-12 w-12 rounded-full ring-2 ring-offset-[2px] flex items-center justify-center text-white font-bold text-xl"
+                  style={{ backgroundColor: getColor(name) }}
+                >
+                  {getInitials(name)}
+                </div>
                 <div className="flex flex-col">
                   <p className="font-semibold">{name}</p>
                   <p className="text-sm">{role}</p>

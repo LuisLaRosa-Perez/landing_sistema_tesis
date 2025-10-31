@@ -30,27 +30,23 @@ export const NavMenu = ({
       >
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={triggerStyle}>
-            <Link href="/#why-choose-us">Why Choose Us</Link>
+            <Link href="/#why-choose-us">¿Por Qué Elegirnos?</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <NavigationMenuLink asChild className={triggerStyle}>
+            <Link href="/#features">Características</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={triggerStyle}>
-            <Link href="/#industries">Industries</Link>
+            <Link href="/#faq">Preguntas Frecuentes</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={triggerStyle}>
-            <Link href="/#features">Features</Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild className={triggerStyle}>
-            <Link href="/#faq">FAQ</Link>
-          </NavigationMenuLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild className={triggerStyle}>
-            <Link href="/#testimonials">Testimonials</Link>
+            <Link href="/#testimonials">Testimonios</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
