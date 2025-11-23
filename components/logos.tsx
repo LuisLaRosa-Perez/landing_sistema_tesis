@@ -16,6 +16,45 @@ const TravelPerk = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+export const LaravelLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg width="40" height="40" viewBox="0 0 24 24" {...props} aria-hidden>
+    {/* SVG simple representativo de Laravel */}
+    <path d="M3 3h18v18H3z" fill="currentColor" />
+  </svg>
+)
+
+export const FilamentLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg width="40" height="40" viewBox="0 0 24 24" {...props} aria-hidden>
+    <rect x="3" y="3" width="18" height="18" rx="3" fill="currentColor" />
+  </svg>
+)
+
+export const PHPIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg width="40" height="40" viewBox="0 0 24 24" {...props} aria-hidden>
+    <ellipse cx="12" cy="12" rx="9" ry="5" fill="currentColor" />
+  </svg>
+)
+
+export const OllamaLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg width="40" height="40" viewBox="0 0 24 24" {...props} aria-hidden>
+    <path d="M2 12c0-5 4-9 9-9s9 4 9 9-4 9-9 9S2 17 2 12z" fill="currentColor" />
+  </svg>
+)
+
+export const ChatGPTLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg width="40" height="40" viewBox="0 0 24 24" {...props} aria-hidden>
+    <path d="M12 2L2 7l10 5 10-5L12 2z" fill="currentColor" />
+  </svg>
+)
+
+
+
+export const GoogleLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg width="40" height="40" viewBox="0 0 24 24" {...props} aria-hidden>
+    <path d="M21 12.3A9 9 0 1 0 9 21v-3.7a5.6 5.6 0 1 1 9.8-5.0H21z" fill="currentColor" />
+  </svg>
+)
+
 const Cursor = (props: SVGProps<SVGSVGElement>) => (
   <svg {...props} fill="currentColor" viewBox="0 0 1655.29 278.83">
     <path d="M139.03,4.61h90.64v49.93h-87.57c-47.24,0-84.11,27.27-84.11,84.88s36.87,84.88,84.11,84.88h87.57v49.93h-94.48c-79.12,0-135.19-46.48-135.19-134.82S59.91,4.61,139.03,4.61Z" />
@@ -141,7 +180,52 @@ const Webflow = (props: SVGProps<SVGSVGElement>) => (
     />
     <path d="M958.649 60.5184h-27.674l29.95 100.3216h24.216l19.699-64.0754 21.27 64.0754h23.85L1080 60.5184h-25.03l-17.04 62.4436-18.83-62.4436h-24.218l-18.741 63.8196-17.492-63.8196Z" />
   </svg>
+
+  
 );
+
+export const Gemini: React.FC = () => (
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-label="Gemini">
+    <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M7 8h10M7 16h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+);
+
+export const Replit: React.FC = () => (
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-label="Replit">
+    <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.5"/>
+    <path d="M8 12h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+);
+
+export const MagicUI: React.FC = () => (
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-label="MagicUI">
+    <polygon points="12,3 14,9 20,9 15,13 17,19 12,15 7,19 9,13 4,9 10,9" stroke="currentColor" strokeWidth="1" fill="none"/>
+  </svg>
+);
+
+export const VSCodium: React.FC = () => (
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-label="VSCodium">
+    <rect x="4" y="4" width="16" height="16" stroke="currentColor" strokeWidth="1.5" rx="2"/>
+    <path d="M8 7l8 5-8 5V7z" stroke="currentColor" strokeWidth="1.2" fill="none"/>
+  </svg>
+);
+
+export const MediaWiki: React.FC = () => (
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-label="MediaWiki">
+    <path d="M12 3l3.5 7H7.5L12 3z" stroke="currentColor" strokeWidth="1.2" fill="none"/>
+    <path d="M6 14h12v3H6v-3z" stroke="currentColor" strokeWidth="1.2" fill="none"/>
+  </svg>
+);
+
+export const GooglePaLM: React.FC = () => (
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-label="GooglePaLM">
+    <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.2"/>
+    <path d="M8 12h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+  </svg>
+);
+
+
 
 export {
   Roblox,
@@ -154,4 +238,5 @@ export {
   Shopify,
   Airbnb,
   Webflow,
+  
 };

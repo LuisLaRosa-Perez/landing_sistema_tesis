@@ -1,13 +1,14 @@
 import { BackgroundPattern } from "@/components/background-pattern";
 import { FAQ } from "@/components/faq";
-import { FeaturesComparison } from "@/components/features-comparison";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
-import Stats from "@/components/stats"; // Import the new Stats component
-
+import Stats from "@/components/stats";
 import { Navbar } from "@/components/navbar";
 import { Testimonials } from "@/components/testimonials";
-import { WhyChooseUs } from "@/components/why-choose-us";
+import { Features8 } from "@/components/features-8";
+import LogoCloud from "@/components/logo-cloud";
+
+
 
 export default function Home() {
   return (
@@ -15,11 +16,11 @@ export default function Home() {
       <div className="relative bg-primary/4">
         <Navbar />
         <Hero />
+        <LogoCloud />
         <BackgroundPattern />
       </div>
-
-      <Stats /> {/* Render the Stats component here */}
-   
+      <Stats />
+      <Features8 />
       <FAQ />
       <Testimonials />
       <Footer />
