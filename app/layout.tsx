@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   description: "Proyecto de Inteligencia Artificial Educativa. Desarrollado con Ollama y tecnologías open source.",
 };
 
+import { Toaster } from "@/components/ui/sonner"
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -30,6 +32,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
